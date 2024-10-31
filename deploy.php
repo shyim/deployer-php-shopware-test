@@ -72,6 +72,10 @@ task('deploy:update_code')->setCallback(static function () {
 // Hosts
 
 host('157.90.147.236')
+    ->setLabels([
+        'type' => 'web',
+        'env'  => 'production',
+    ])
     ->set('remote_user', 'root')
     ->set('deploy_path', '/var/www/')
     ->set('http_user', 'www-data');
