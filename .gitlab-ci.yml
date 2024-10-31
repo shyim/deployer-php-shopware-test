@@ -26,4 +26,4 @@ Deploy:
         - shopware-cli project ci .
         # This command starts the workflow that is defined in the `deploy` task in the `deploy.php`.
         # `production` is the stage that was defined in the `host` in the `deploy.php`
-        - dep deploy env=prod
+        - vendor/bin/dep deploy env=prod
