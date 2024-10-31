@@ -18,7 +18,7 @@ Deploy:
     stage: deploy
     # Tags are useful to only use runners that are safe or meet specific requirements
     tags: [ shopware-multi-arch ]
-    image: friendsofshopware/shopware-cli:0.4.58-php-8.3
+    image: friendsofshopware/shopware-cli:0.4.58-php-8.2
     before_script:
         # First, we need to execute all commands that are defined in the `configureSSHAgent` variable.
         - *configureSSHAgent
