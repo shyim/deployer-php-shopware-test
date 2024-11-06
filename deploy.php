@@ -51,6 +51,8 @@ task('sw:deployment:helper', static function() {
    run('cd {{release_path}} && ./vendor/bin/shopware-deployment-helper run');
 });
 
+
+
 desc('Deploys your project');
 task('deploy', [
     'deploy:prepare',
