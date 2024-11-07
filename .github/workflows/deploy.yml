@@ -8,19 +8,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
-
-      - name: Install Shopware CLI
-        uses: FriendsOfShopware/shopware-cli-action@v1
-
-      - name: Build
-        run: shopware-cli project ci .
-
-      - name: Deploy
-        uses: deployphp/action@v1
-        with:
-          dep: deploy
-          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: TEst
+        runs: whoami
